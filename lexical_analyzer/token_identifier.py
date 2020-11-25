@@ -10,7 +10,7 @@ def identify_token(string_input, index, length):
     str_match_count = fsm.string(string_input, largest_match_count, index, length)
     id_match_count = fsm.identifier(string_input, largest_match_count, index, length)
     op_match_count = fsm.operator(string_input, largest_match_count, index, length)
-    space_match_count = fsm.space(string_input, largest_match_count, index, length)
+    space_match_count = fsm.whitespace(string_input, largest_match_count, index, length)
     equals_match_count = fsm.equals(string_input, largest_match_count, index, length)
     sem_match_count = fsm.semicolon(string_input, largest_match_count, index, length)
 
@@ -28,7 +28,7 @@ def identify_token(string_input, index, length):
     elif largest_match_count[0] == op_match_count:
         token = tokens.OPERATOR
     elif largest_match_count[0] == space_match_count:
-        token = tokens.SPACE
+        token = tokens.WHITESPACE
     elif largest_match_count[0] == equals_match_count:
         token = tokens.EQUALS
     elif largest_match_count[0] == sem_match_count: 

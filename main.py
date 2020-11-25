@@ -1,4 +1,4 @@
-from lexical_analyzer.main_analyzer import analyze
+from lexical_analyzer.assignment_analyzer import analyze
 
 if __name__ == '__main__':
 
@@ -16,4 +16,4 @@ if __name__ == '__main__':
     for statement, validation in zip(assignment_statements, validation_results):
         
         print (f'\n{statement}   -> {validation}')
-        print('-------------------------------------------------')
+        print('-----------------------------------------------------')

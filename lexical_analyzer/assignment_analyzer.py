@@ -40,7 +40,7 @@ def analyze(string_list):
                 input = 6
             elif token == tokens.SEMICOLON:
                 input = 7
-            elif token == tokens.SPACE:
+            elif token == tokens.WHITESPACE:
                 input = 8
             else: 
                 input = 9

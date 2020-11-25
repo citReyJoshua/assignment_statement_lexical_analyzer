@@ -95,23 +95,22 @@ def float(string_input, largest_match_count, index, length):
     state = 0
     
     table = [
-        (2, 1, 4),
-        (3, 3, 4),
-        (2, 1, 4),
-        (3, 4, 4),
-        (4, 4, 4)
+        (1, 0, 3),
+        (3, 2, 3),
+        (3, 2, 3),
+        (3, 3, 3),
     ]
 
     while i != length:
-        if string_input[i].isdigit():
+        if string_input[i] == '.':
             input = 0
-        elif string_input[i] == '.':
+        elif string_input[i].isdigit():
             input = 1
         else:
             input = 2
     
         state = table[state][input]
-        if state == 4:
+        if state == 3:
             break
         i += 1
     
@@ -129,7 +128,7 @@ def character(string_input, largest_match_count, index, length):
         (4, 2),
         (3, 4),
         (4, 4),
-        (4, 4),
+        (4, 4)
     ]
 
     while i != length:
@@ -178,13 +177,13 @@ def string(string_input, largest_match_count, index, length):
     
     return i
 
-def space(string_input, largest_match_count, index, length):
+def whitespace(string_input, largest_match_count, index, length):
     i = index[0]
     state = 0
 
     table = [
         (1, 2),
-        (2, 2),
+        (1, 2),
         (2, 2),
     ]
 
