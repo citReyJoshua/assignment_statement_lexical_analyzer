@@ -1,0 +1,4 @@
+1. To test program, write your assignment statements on the test-cases.txt file.
+2. Make sure you have python interpreter installed to your device.
+3. Navigate to file directory.
+4. Run main.py -- python3 main.py
