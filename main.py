@@ -7,7 +7,7 @@ if __name__ == '__main__':
     # get string statements from file
     with open('test-cases.txt', 'r') as file:
         for line in file:
-            assignment_statements.append(line)
+            assignment_statements.append(line.rstrip('\n'))
     
     # lexically analyze
     validation_results = analyze(assignment_statements)
@@ -15,5 +15,5 @@ if __name__ == '__main__':
     # display results
     for statement, validation in zip(assignment_statements, validation_results):
         
-        print (f'\n{statement} -> {validation}')
+        print (f'\n{statement}   -> {validation}')
         print('-----------------------------------------')
