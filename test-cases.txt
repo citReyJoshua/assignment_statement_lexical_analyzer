@@ -1,3 +1,9 @@
+num1 = 10.50+ num2;
+num2= 10.50+ num1 * 10 / 18.5;
+num3= 10.50+ num1 * 10 / 18.5;
+num1 = + 10.50+ num2;
+num2= 10.50+ num1 * 10 /;
+num3= 10.50+ num1 *+10 / 18.5;
 num1 = num_1;
 1num_ = num_1;
 _ = 123 + x;
@@ -6,3 +12,4 @@ hello_world = "Hello World";
 temp         =       1 + 'c';
 a + b;
 fib = fib * fib - 1.0;
+a=b+c;

@@ -16,4 +16,4 @@ if __name__ == '__main__':
     for statement, validation in zip(assignment_statements, validation_results):
         
         print (f'\n{statement}   -> {validation}')
-        print('-----------------------------------------')
+        print('-------------------------------------------------')
